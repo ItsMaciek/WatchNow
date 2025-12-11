@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Watch now</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./clock.png" />
+    <meta name="theme-color" content="#0f0f0f" />
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <h1>Watch now</h1>
+      <input type="file" id="file" accept=".csv,text/csv" />
+      <button class="clear" id="clearBtn">Clear</button>
+      <div class="filters">
+        <label for="sort">Sort:</label>
+        <select id="sort">
+          <option value="random">Random</option>
+          <option value="added_desc">Newest</option>
+          <option value="added_asc">Oldest</option>
+          <option value="title_asc">Title A–Z</option>
+          <option value="title_desc">Title Z–A</option>
+        </select>
+        <button class="toggle-view" id="toggleViewBtn">Grid view</button>
+      </div>
+    </header>
+
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty">
+      <ol>
+        <li>Open <strong>Google Takeout</strong>.</li>
+        <li>
+          In the <em>Select data to include</em> section, choose only
+          <strong>YouTube and YouTube Music</strong>.
+        </li>
+        <li>
+          Click <strong>All YouTube data included</strong> and keep only
+          <strong>Playlists</strong> checked.
+        </li>
+        <li>
+          Proceed with the export. You’ll typically receive an email with your
+          files within a minute.
+        </li>
+        <li>
+          Unzip the downloaded archive — inside you’ll find a CSV file
+          containing the video IDs.
+        </li>
+      </ol>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

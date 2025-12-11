@@ -1,0 +1,16 @@
+{
+  "name": "Watch now",
+  "short_name": "WatchNow",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#0f0f0f",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
